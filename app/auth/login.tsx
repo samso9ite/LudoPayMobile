@@ -63,7 +63,7 @@ export default function LoginScreen() {
 
             <View style={{alignItems:"center", top:120}}>
                 <ThemedText style={{marginBottom:30}}>
-                    New to LudoPay ? <Link href={"/"} style={{color:"#1C70EB", fontWeight:700}}>Create an account </Link>
+                    New to LudoPay ? <Link href={"/auth/createAccount"} style={{color:"#1C70EB", fontWeight:700}}>Create an account </Link>
                 </ThemedText>
                 <TouchableOpacity style={{...styles.button}}>
                     <ThemedText type="subtitle" color="white" style={{padding:"4%"}}>Login</ThemedText>

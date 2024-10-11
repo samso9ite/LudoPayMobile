@@ -99,7 +99,7 @@ export default function CreateAccountScreen() {
                     <ThemedText type="subtitle" color="white" style={{padding:"4%"}}>Login</ThemedText>
                 </TouchableOpacity>
                 <ThemedText style={{top:10}}>
-                   Already have an account ? <Link href={"/"} style={{color:"#1C70EB", fontWeight:700}}>Sign In </Link>
+                   Already have an account ? <Link href={"/auth/login"} style={{color:"#1C70EB", fontWeight:700}}>Sign In </Link>
                 </ThemedText>
             </View>
         </View>
