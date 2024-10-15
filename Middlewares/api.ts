@@ -9,11 +9,10 @@ const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const baseQuery = fetchBaseQuery({
     baseUrl: BASE_URL,
-    prepareHeaders: (headers) => {
+    prepareHeaders: (headers) => {  
         let storedToken = localStorage.getItem("cwr_u")
         const token = storedToken ? JSON.parse(storedToken) : null
 
-        // Pass the token to headers if token is available
         if (token){
             const authorizationKey = token.token.access
             headers.set("Authorization", `Bearer ${authorizationKey}`)
