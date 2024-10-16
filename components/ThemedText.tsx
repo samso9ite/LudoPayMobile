@@ -20,6 +20,7 @@ export function ThemedText({
         type === 'title' ? styles.title : undefined,
         type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
         type === 'subtitle' ? styles.subtitle : undefined,
+        type === 'subtitleRubik' ? styles.subtitleRubik : undefined,
         type === 'link' ? styles.link : undefined,
         style,
       ]}
@@ -50,6 +51,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     fontFamily:"BaseNuewSemiBold"
+  },
+  subtitleRubik: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    fontFamily:"RubikSemiBold"
   },
   link: {
     lineHeight: 30,

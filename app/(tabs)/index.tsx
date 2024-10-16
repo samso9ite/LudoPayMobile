@@ -5,8 +5,6 @@ import {Button, Card, Icon} from'@rneui/themed'
 import { globalStyle } from "@/utils/styles";
 import Swiper from "react-native-swiper";
 
-
-
 export default function HomeScreen() {
     return(
         <View style={styles.container}>
@@ -48,26 +46,55 @@ export default function HomeScreen() {
                 <ThemedText color="white" type="default"> Receive </ThemedText>
             </Button>
             <Button radius={"lg"} size="lg" type="outline"  
-             buttonStyle={{backgroundColor:"transparent", paddingLeft:40, paddingRight:40, borderWidth:1, borderColor:"#153E90"}}>
+             buttonStyle={{backgroundColor:"transparent", paddingLeft:45, paddingRight:45, borderWidth:1, borderColor:"#153E90"}}>
                 <Icon
-                    name='keyboard-double-arrow-down'
+                    name='keyboard-double-arrow-up'
                     type='materialicons'
                     color='#153E90'
                     style={{padding:3}}
                 />
-                <ThemedText color="#153E90" type="default"> Receive </ThemedText>
+                <ThemedText color="#153E90" type="default"> Send </ThemedText>
             </Button>
             </View>
             </View>
             <View style={{paddingTop:20, justifyContent:"center"}}>
-            <Image source={require("../../assets/images/banner.png")}/>
-            <Swiper dotColor="" activeDotColor="white" dotStyle={{top:"15%"}}
-          activeDotStyle={{top:"15%"}}> 
-                <View>
-                    <Image source={require("../../assets/images/banner.png")} />
+                <Image source={require("../../assets/images/banner.png")} 
+                    style={{width:"100%",  overflow: 'hidden', borderRadius:15  }}
+                />
+            </View>
+            <View style={{marginTop:25}}>
+                <Card containerStyle={{margin:0, borderColor:"transparent", borderRadius:15}} >
+                <View style={[globalStyle.row, { alignItems: 'center' }]}>
+                    <Icon
+                        reverse
+                        name="gift"
+                        containerStyle={{ backgroundColor: "green" }}
+                        type="antdesign"
+                        reverseColor="#1C70EB"
+                        color="#f2f2f2"
+                        iconStyle={{ fontSize: 39 }}
+                        size={30}
+                    />
+                    <View style={{ flex: 1, paddingLeft: 10 }}>
+                        <ThemedText
+                            type="subtitleRubik"
+                            color="#4D4D4D"
+                            style={{ flexWrap: "wrap" }}
+                        >
+                            Cash up for grabs!
+                        </ThemedText>
+                        <ThemedText
+                            type="default"
+                            color="#BDBDBD"
+                            style={{ paddingTop: 10 }}
+                        >
+                            Invite your friends and get to earn as high as #2,000 cash
+                        </ThemedText>
+                    </View>
                 </View>
-          </Swiper>
-          </View>
+
+                </Card>
+            </View>
             </SafeAreaView>
         </View>
     )
