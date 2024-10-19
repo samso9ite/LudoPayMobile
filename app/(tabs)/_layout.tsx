@@ -4,11 +4,11 @@ import { IonIcon } from "@/utils/Icons";
 export default function TabLayout(){
     return (
     <Tabs
-    screenOptions={{
-        headerShown:false,
-        tabBarActiveTintColor:"#1C70EB",
-    }}
-    >
+        screenOptions={{
+            headerShown:false,
+            tabBarActiveTintColor:"#1C70EB",
+        }}
+        >
         <Tabs.Screen
             name="index"
             options={{
@@ -17,6 +17,7 @@ export default function TabLayout(){
                     <IonIcon size={30} name={focused ? 'grid' : 'grid-outline'} 
                     color={focused ? "#1C70EB" : ''}/>
                 ),
+                
             }} 
         />
          <Tabs.Screen

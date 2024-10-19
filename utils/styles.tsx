@@ -5,8 +5,13 @@ export const globalStyle = StyleSheet.create({
         flexDirection:"row",
         flexWrap:"wrap"
     },
-    
+
     box: {
         width:"50%"
+    },
+    hairline:{
+        borderBottomColor: 'black',
+        paddingTop:7,
+        borderBottomWidth: StyleSheet.hairlineWidth,
     }
 })

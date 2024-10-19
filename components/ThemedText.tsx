@@ -2,7 +2,7 @@ import { Text, type TextProps, StyleSheet } from 'react-native';
 
 export type ThemedTextProps = TextProps & {
   color?:string;
-  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
+  type?: 'default' | 'title' | 'titleRubik' | 'defaultSemiBold' | 'subtitle' | 'link' | 'subtitleRubik';
 };
 
 export function ThemedText({
@@ -18,6 +18,7 @@ export function ThemedText({
         { color: color},
         type === 'default' ? styles.default : undefined,
         type === 'title' ? styles.title : undefined,
+        type === 'titleRubik' ? styles.title : undefined,
         type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
         type === 'subtitle' ? styles.subtitle : undefined,
         type === 'subtitleRubik' ? styles.subtitleRubik : undefined,
@@ -46,6 +47,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     lineHeight: 32,
     fontFamily: "BaseNuewBold"
+  },
+  titleRubik: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    lineHeight: 32,
+    fontFamily: "RubikBold"
   },
   subtitle: {
     fontSize: 20,
