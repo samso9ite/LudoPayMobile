@@ -43,7 +43,7 @@ export default function TabLayout(){
         <Tabs.Screen
             name="Settings/index"
             options={{
-                title:'Settings',
+                title:'Profile',
                 tabBarIcon: ({focused}) => (
                     <IonIcon size={23} name={focused ? 'settings' : 'settings-outline'} 
                     color={focused ? "#1C70EB" : ''}/>

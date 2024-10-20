@@ -1,4 +1,5 @@
 import { ThemedText } from "@/components/ThemedText"
+import { globalStyle } from "@/utils/styles";
 import { Link } from "expo-router";
 import { Controller, useForm } from "react-hook-form"
 import { View, StyleSheet, ImageBackground, SafeAreaView, TextInput, TouchableOpacity } from "react-native"
@@ -30,7 +31,7 @@ export default function LoginScreen() {
                 render={({ field }) => (
                     <TextInput
                     {...field}
-                    style={styles.input}
+                    style={globalStyle.input}
                     placeholder="youremail@gmail.com"
                     />
                 )}
@@ -47,7 +48,7 @@ export default function LoginScreen() {
                 render={({ field }) => (
                     <TextInput
                     {...field}
-                    style={styles.input}
+                    style={globalStyle.input}
                     placeholder="youremail@gmail.com"
                     />
                 )}
@@ -86,16 +87,7 @@ const styles = StyleSheet.create({
         height:"30%",
         top:"55%",
       },
-      input: {
-        height: 50,
-        borderColor: '#BDBDBD',
-        borderWidth: 1,
-        borderRadius:6,
-        marginBottom: 10,
-        padding: 8,
-        alignItems:"center",
-        width:"100%"
-      },
+      
       errorText: {
         color: 'red',
         marginBottom: 10,

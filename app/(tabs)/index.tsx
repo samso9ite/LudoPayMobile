@@ -9,7 +9,7 @@ export default function HomeScreen() {
     return(
         <View style={styles.container}>
             <SafeAreaView >
-            <TopBar />
+                <TopBar />
             <View>
             <View style={{marginTop:20}}>
                 <Card containerStyle={{backgroundColor:"#1C70EB", borderRadius:10, margin:0}}>
@@ -59,7 +59,7 @@ export default function HomeScreen() {
             </View>
             <View style={{paddingTop:20, justifyContent:"center"}}>
                 <Image source={require("../../assets/images/banner.png")} 
-                    style={{width:"100%",  overflow: 'hidden', borderRadius:15  }}
+                    style={globalStyle.bannerStyle}
                 />
             </View>
             <View style={{marginTop:25}}>

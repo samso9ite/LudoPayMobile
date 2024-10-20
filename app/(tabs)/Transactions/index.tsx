@@ -57,9 +57,7 @@ export default function Transactions(){
                             <ThemedText type="default" color="green">{item.status}</ThemedText>
                         </View>
                     </View>    
-                ))
-                    
-                }
+                ))}
             </SafeAreaView>
         </View>
     )

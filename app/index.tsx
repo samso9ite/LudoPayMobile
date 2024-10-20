@@ -38,7 +38,7 @@ export default function Index() {
         <SafeAreaView style={styles.safeAfrea}>
          <Swiper dotColor="" activeDotColor="white" dotStyle={{top:"15%"}}
           activeDotStyle={{top:"15%"}}> 
-          {items}
+            {items}
           </Swiper>
         </SafeAreaView>
        </ImageBackground>
@@ -47,7 +47,7 @@ export default function Index() {
           onPress={() => router.push("/auth/signUp")}>
           <ThemedText type="subtitle" color="white" style={{padding:"4%"}}>Get Started</ThemedText>
        </TouchableOpacity>
-       <ThemedText type="default" style={{textAlign:"center", marginTop:"10%"}}>Create an account or <Link href="/auth/verified" style={{color:"#1C70EB"}}> sign in </Link> to Ludopay</ThemedText>
+       <ThemedText type="default" style={{textAlign:"center", marginTop:"10%"}}>Create an account or <Link href="/requestPayment/paymentSummary" style={{color:"#1C70EB"}}> sign in </Link> to Ludopay</ThemedText>
         
     </View>
   );
