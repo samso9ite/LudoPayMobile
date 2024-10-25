@@ -54,7 +54,7 @@ export default function SettingScreen() {
                 <TitleBar title="Profile"/>
                 <View style={{alignItems:"center"}}>
                     <ThemedText type="subtitle" color="white" 
-                        style={styles.avatarContainer}>
+                        style={globalStyle.avatarContainer}>
                         SA
                     </ThemedText>
                     <ThemedText type="default" style={{fontSize:20, marginTop:10}}>
@@ -124,17 +124,7 @@ const styles = StyleSheet.create({
     container: {
         // padding: 30
     },
-    avatarContainer: {
-        width: 100,          
-        height: 100,        
-        borderRadius: 50,
-        backgroundColor: '#C0E4FA',
-        paddingTop:35,
-        overflow: 'hidden', 
-        textAlign: 'center',
-        color:"black",
-        marginTop:30
-    },
+ 
     btnStyle:{
         backgroundColor:"#1C70EB", 
         paddingLeft:40, 

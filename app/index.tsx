@@ -44,10 +44,10 @@ export default function Index() {
        </ImageBackground>
  
        <TouchableOpacity style={{...styles.button}} 
-          onPress={() => router.push("/auth/signUp")}>
+          onPress={() => router.push("/(tabs)")}>
           <ThemedText type="subtitle" color="white" style={{padding:"4%"}}>Get Started</ThemedText>
        </TouchableOpacity>
-       <ThemedText type="default" style={{textAlign:"center", marginTop:"10%"}}>Create an account or <Link href="/requestPayment/paymentSummary" style={{color:"#1C70EB"}}> sign in </Link> to Ludopay</ThemedText>
+       <ThemedText type="default" style={{textAlign:"center", marginTop:"10%"}}>Create an account or <Link href="/Referral" style={{color:"#1C70EB"}}> sign in </Link> to Ludopay</ThemedText>
         
     </View>
   );
